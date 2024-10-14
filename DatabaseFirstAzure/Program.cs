@@ -3,5 +3,5 @@
 using DatabaseFirstAzure.Context;
 using Microsoft.EntityFrameworkCore;
 
-Console.WriteLine("Hello, World!");
+Console.WriteLine("Hello, Worldy!");
 

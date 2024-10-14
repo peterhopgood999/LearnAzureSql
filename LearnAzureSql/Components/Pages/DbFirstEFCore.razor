@@ -1,0 +1,45 @@
+@page "/DbFirstEFCore"
+@rendermode InteractiveServer
+@using DatabaseFirstAzure.Context
+<h3>Db First EFCore</h3>
+
+@if (_render)
+{
+    <div class="container w-50">
+        <div class="row">
+            <div class="col">
+                <table class="table table-bordered">
+                    <thead>
+                    <th>Address</th>
+                    </thead>
+                    <tbody>
+                    @foreach (var addr in _data)
+                    {
+                        <tr>
+                            <td class="text-center">@addr</td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+}
+
+<button class="button btn-primary mt-2" @onclick="GetData">Get Data</button>
+
+@code {
+    private bool _render;
+    private List<string> _data = new();
+
+    private void GetData() => _render = true;
+    
+    protected override void OnInitialized()
+    {
+        using (var context = new MyDbContext())
+        {
+            _data = context.CustomerAddresses.Take(5).Select(x => x.Address.AddressLine1).ToList();
+        }
+    }
+    
+}

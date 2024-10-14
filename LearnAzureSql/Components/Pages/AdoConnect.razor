@@ -1,0 +1,58 @@
+﻿@page "/AdoConnect"
+@using System.Data.SqlClient
+@rendermode InteractiveServer
+<PageTitle>Connect To Azure With ADO</PageTitle>
+
+<h1>Connect To Azure With ADO</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            @if (_render)
+            {
+                <table class="table table-bordered w-25">
+                    <thead>
+                    <th>Address</th>
+                    </thead>
+                    <tbody>
+                    @foreach (var address in _data)
+                    {
+                        <tr>
+                            <td class="text-center">@address</td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            }
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <button class="btn btn-primary" @onclick="GetData">Get Data</button>
+        </div>
+    </div>
+</div>
+
+
+@code {
+    [Inject]
+    private IConfiguration _configuration { get; set; }
+
+    private List<string> _data = new ();
+    private bool _render = false;
+    
+    protected override void OnInitialized()
+    {
+        var connectionString = _configuration.GetConnectionString("MySampleDatabase");
+        using var sqlConnection = new SqlConnection(connectionString);
+        sqlConnection.Open();
+        using SqlCommand cmd = 
+            new SqlCommand("SELECT TOP 5 AddressLine1 FROM SalesLT.Address", sqlConnection);
+
+        var result = cmd.ExecuteReader();
+
+        while (result.Read()) _data.Add(result.GetString(0));
+    }
+
+    private void GetData() => _render = true;
+}

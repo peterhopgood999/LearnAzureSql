@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\DELL\\RiderProjects\\LearnAzureSql\\LearnAzureSql\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\LearnAzureSql.bundle.scp.css",
+      "PackagePath": "staticwebassets\\LearnAzureSql.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\RiderProjects\\LearnAzureSql\\LearnAzureSql\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\RiderProjects\\LearnAzureSql\\LearnAzureSql\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\RiderProjects\\LearnAzureSql\\LearnAzureSql\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\RiderProjects\\LearnAzureSql\\LearnAzureSql\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.LearnAzureSql.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.LearnAzureSql.props",
+      "PackagePath": "build\\LearnAzureSql.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.LearnAzureSql.props",
+      "PackagePath": "buildMultiTargeting\\LearnAzureSql.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.LearnAzureSql.props",
+      "PackagePath": "buildTransitive\\LearnAzureSql.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

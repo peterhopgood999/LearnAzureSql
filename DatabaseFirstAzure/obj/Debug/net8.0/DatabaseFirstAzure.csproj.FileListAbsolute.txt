@@ -128,3 +128,4 @@ C:\Users\DELL\RiderProjects\LearnAzureSql\DatabaseFirstAzure\bin\Debug\net8.0\ru
 C:\Users\DELL\RiderProjects\LearnAzureSql\DatabaseFirstAzure\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\DELL\RiderProjects\LearnAzureSql\DatabaseFirstAzure\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\DELL\RiderProjects\LearnAzureSql\DatabaseFirstAzure\obj\Debug\net8.0\DatabaseFirstAzure.csproj.AssemblyReference.cache
+C:\Users\DELL\RiderProjects\LearnAzureSql\DatabaseFirstAzure\obj\Debug\net8.0\DatabaseFirstAzure.sourcelink.json

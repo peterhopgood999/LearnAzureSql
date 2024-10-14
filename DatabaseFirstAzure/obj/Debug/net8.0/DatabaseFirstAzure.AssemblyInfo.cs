@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DatabaseFirstAzure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1eb5134add7c5c35ff94a1050bad874545c0fda1")]
 [assembly: System.Reflection.AssemblyProductAttribute("DatabaseFirstAzure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DatabaseFirstAzure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
